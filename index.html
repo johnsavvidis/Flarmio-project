@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The form</title>
+    <meta charset="UTF-8" />
+    <style>
+      /* Please add the CSS here */
+      #container {
+                margin-left: 30px;
+            }
+            
+            #headline {
+                font-size: 30px;
+                font-weight: bold;
+                color: cornflowerblue;
+            }
+            
+            #numName {
+                font-size: 18px;
+                color: black;
+                margin-bottom: 20px;
+            }
+
+            #num_in {
+                width: 250px;
+                border-radius: 40px bold;
+            }
+            
+            #btn {
+                width: 100px;
+                background-color: white;
+                color: blue;
+                font-weight: bold;
+                margin-left: 142px;
+                border-color: blue;
+                border-radius: 40px bold;
+                box-sizing: content-box;
+                margin-top: 10px;
+            }
+
+            #numberBox {
+                display: grid;
+            }
+    </style>
+    <script>
+      window.onload = (event) => {
+        let x = document.getElementById("num_in").value;
+        if (!isNaN(x)) {
+          formSubmission();
+        }
+      }
+      function formSubmission(){
+            let x = document.getElementById("num_in").value;
+            let textMessage;
+            if(x == ""){
+                document.getElementById("result").innerHTML = x;
+            }
+            else if(isNaN(x) || x <= 10){
+                textMessage = "Invalid input! Please refresh and try again!";
+                document.getElementById("result").innerHTML = textMessage;
+            }
+            else{
+                textMessage = "Input accepted!";
+                document.getElementById("result").innerHTML = "You've submitted the number " + x + "! " + textMessage;
+            }
+        }
+    </script>
+  </head>
+
+  <body>
+    <!--Please add the HTML here-->
+    <h2 id="headline">Form</h2>
+
+    <p id="numName">Number</p>
+
+    <div id="numberBox">
+        <input id="num_in" placeholder="Please enter a number">
+
+        <button type="button" id="btn" onclick="formSubmission()">Submit</button>
+    </div>
+
+    <p id="result"></p>
+  </body>
+</html>

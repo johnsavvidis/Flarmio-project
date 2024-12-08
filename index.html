@@ -5,37 +5,47 @@
     <meta charset="UTF-8" />
     <style>
       /* Please add the CSS here */
-      #container {
-                margin-left: 30px;
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                width: 290px;
+                height: 200px;
+                padding: 10px 0px 10px 30px;
+                margin: auto;
+                border-style: solid;
+                border-color: lightgrey;
+                border-radius: 12px;
             }
-            
             #headline {
                 font-size: 30px;
-                font-weight: bold;
+                font-weight: bolder;
                 color: cornflowerblue;
             }
             
             #numName {
                 font-size: 18px;
                 color: black;
-                margin-bottom: 20px;
+                margin-top: 0px;
+                margin-bottom: 10px;
             }
 
             #num_in {
                 width: 250px;
-                border-radius: 40px bold;
+                border-radius: 5px;
+                border-color: lightgrey;
             }
             
-            #btn {
-                width: 100px;
+            .btn {
+                width: 50px;
                 background-color: white;
-                color: blue;
+                color: cornflowerblue;
                 font-weight: bold;
-                margin-left: 142px;
-                border-color: blue;
-                border-radius: 40px bold;
-                box-sizing: content-box;
-                margin-top: 10px;
+                margin-left: 190px;
+                border-color: cornflowerblue;
+                border-radius: 6px;
+                /*box-sizing: content-box;*/
+                margin-top: 15px;
             }
 
             #numberBox {
@@ -69,16 +79,18 @@
 
   <body>
     <!--Please add the HTML here-->
-    <h2 id="headline">Form</h2>
+    <div class="container">
+      <h2 id="headline">Form</h2>
 
-    <p id="numName">Number</p>
-
-    <div id="numberBox">
-        <input id="num_in" placeholder="Please enter a number">
-
-        <button type="button" id="btn" onclick="formSubmission()">Submit</button>
+      <p id="numName">Number</p>
+  
+      <div id="numberBox">
+          <input id="num_in" placeholder="Please enter a number">
+  
+          <button type="button" class="btn" onclick="formSubmission()">Submit</button>
+      </div>
+  
+      <p id="result"></p>
     </div>
-
-    <p id="result"></p>
   </body>
 </html>

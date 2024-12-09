@@ -74,15 +74,17 @@
             let x = document.getElementById("num_in").value;
             let textMessage;
             if(x == ""){
-                document.getElementById("result").innerHTML = x;
+                document.getElementById("num_in").innerHTML = "";
             }
             else if(isNaN(x) || x <= 10){
-                textMessage = "Invalid input! Please refresh and try again!";
-                document.getElementById("result").innerHTML = textMessage;
+                textMessage = "Invalid input! Must be greater than 10!";
+                alert(textMessage);
+                document.getElementById("num_in").value = null;
             }
             else{
                 textMessage = "Input accepted!";
-                document.getElementById("result").innerHTML = "You've submitted the number " + x + "! " + textMessage;
+                alert(textMessage);
+                document.getElementById("num_in").value = null;
             }
         }
     </script>
@@ -100,8 +102,6 @@
   
           <button type="button" class="btn" onclick="formSubmission()">Submit</button>
       </div>
-  
-      <p id="result"></p>
     </div>
   </body>
 </html>

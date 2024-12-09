@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>The form</title>
-    <meta charset="UTF-8" />
-    <style>
-      /* Please add the CSS here */
+    <head>
+        <title>The form</title>
+        <meta charset="UTF-8" />
+        <style>
+            /* Please add the CSS here */
+
+            /* -- Mobile design -- */
+
             .container {
                 display: flex;
                 flex-direction: column;
                 align-items: left;
-                width: 600px;
+                width: 580px;
                 height: 400px;
-                padding: 15px 0px 15px 35px;
+                padding: 20px 0px 20px 70px;
                 margin: auto;
                 margin-top: 100px;
                 border-style: solid;
                 border-color: lightgrey;
-                border-radius: 12px;
+                border-radius: 20px;
             }
             #headline {
                 font-size: 60px;
@@ -32,9 +35,9 @@
             }
 
             #num_in {
-                width: 550px;
+                width: 500px;
                 font-size: 36px;
-                border-radius: 5px;
+                border-radius: 10px;
                 border-style: solid;
                 border-color: lightgrey;
             }
@@ -47,21 +50,24 @@
                 font-weight: bold;
                 border-style: solid;
                 border-color:cornflowerblue;
-                border-radius: 6px;
+                border-radius: 12px;
                 box-sizing: content-box;
                 margin-top: 15px;
-                margin-left: 420px;
+                margin-left: 372px;
             }
 
             #numberBox {
                 display: grid;
             }
 
+            /* -- Desktop design -- */
+
             @media screen and (min-width: 800px) {
                .container {
                     width: 290px;
                     height: 200px;
                     padding: 10px 0px 10px 30px;
+                    border-radius: 12px;
                 }
                 #headline {
                     font-size: 30px;
@@ -74,54 +80,57 @@
                 #num_in {
                     width: 250px;
                     font-size: 14px;
+                    border-radius: 5px;
                 }
             
                 .btn {
                     width: 50px;
                     font-size: 14px;
+                    border-radius: 6px;
                     margin-left: 190px;
                 }
             }
-    </style>
-    <script>
-      window.onload = (event) => {
-        let x = document.getElementById("num_in").value;
-        if (!isNaN(x)) {
-          formSubmission(); 
-        }
-      }
-      function formSubmission(){
-            let x = document.getElementById("num_in").value;
-            let textMessage;
-            if(x == ""){
-                document.getElementById("num_in").innerHTML = "";
-            }
-            else if(isNaN(x) || x <= 10){
-                textMessage = "Invalid input! Must be greater than 10!";
-                alert(textMessage);
-                document.getElementById("num_in").value = null;
-            }
-            else{
-                textMessage = "Input accepted!";
-                alert(textMessage);
-                document.getElementById("num_in").value = null;
-            }
-        }
-    </script>
-  </head>
 
-  <body>
+        </style>
+        <script>
+            window.onload = (event) => {
+                let x = document.getElementById("num_in").value;
+                if (!isNaN(x)) {
+                    formSubmission(); 
+                }
+            }
+            function formSubmission(){  
+                let x = document.getElementById("num_in").value;
+                let textMessage;
+                if(x == ""){
+                    document.getElementById("num_in").innerHTML = "";
+                }
+                else if(isNaN(x) || x <= 10){
+                    textMessage = "Invalid input! Must be greater than 10!";
+                    alert(textMessage);
+                    document.getElementById("num_in").value = null;
+                }
+                else{
+                    textMessage = "Input accepted!";
+                    alert(textMessage);
+                    document.getElementById("num_in").value = null;
+                }
+            }
+
+        </script>
+    </head>
+    <body>
     <!--Please add the HTML here-->
     <div class="container">
-      <h2 id="headline">Form</h2>
+        <h2 id="headline">Form</h2>
 
-      <p id="numName">Number</p>
+        <p id="numName">Number</p>
   
-      <div id="numberBox">
-          <input id="num_in" placeholder="Please enter a number">
+        <div id="numberBox">
+            <input id="num_in" placeholder="Please enter a number">
   
-          <button type="button" class="btn" onclick="formSubmission()">Submit</button>
-      </div>
+            <button type="button" class="btn" onclick="formSubmission()">Submit</button>
+        </div>
     </div>
-  </body>
+    </body>
 </html>

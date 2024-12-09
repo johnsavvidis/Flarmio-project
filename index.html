@@ -115,12 +115,12 @@
                     document.getElementById("num_in").innerHTML = "";
                 }
                 else if(isNaN(x) || x <= 10){
-                    textMessage = "Invalid input! Must be greater than 10!";
+                    textMessage = "❌" + "Invalid input! Must be greater than 10!";
                     alert(textMessage);
                     document.getElementById("num_in").value = null;
                 }
                 else{
-                    textMessage = "Input accepted!";
+                    textMessage = "✅" + "Input accepted!";
                     alert(textMessage);
                     document.getElementById("num_in").value = null;
                 }

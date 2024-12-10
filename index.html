@@ -9,6 +9,71 @@
 
             /* -- Mobile design -- */
 
+            .body{
+                width: 475px;
+                height: 453px;
+                padding: 0px;
+                margin-right: 0px;
+            }
+
+            .container {
+                width: 400px;
+                height: 400px;
+                padding: 10px 0px 10px 40px;
+                
+                border-style: solid;
+                border-color: lightgrey;
+                border-radius: 15px;
+            }
+
+            .headline {
+                font-size: 60px;
+                font-weight: lighter;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: cornflowerblue;
+            }
+            
+            #numName {
+                font-size: 36px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: black;
+                margin-top: 0px;
+                margin-bottom: 10px;    
+            }
+
+            #num_in {
+                width: 350px;
+                height: 40px;
+                font-size: 30px;
+                border-radius: 12px;
+                border-style: solid;
+                border-color: lightgrey;
+            }
+            
+            .btn {
+                width: 340px;
+                background-color: white;
+                color: cornflowerblue;
+                font-size: 28px;
+                cursor: pointer;
+                font-weight: bold;
+                border-style: solid;
+                border-color:cornflowerblue;
+                border-width: medium;
+                border-radius: 12px;
+                box-sizing: content-box;
+                margin-top: 15px;
+            }
+
+            .btn:active{
+                color: blue;
+                border-color: blue;
+            }
+
+            #numberBox {
+                display: grid;
+            }
+
             /* Pop-up overlay styling */
 
             #popupOverlay {
@@ -32,72 +97,12 @@
                 padding: 20px;
                 border-radius: 8px;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                font-size: 25px;
                 text-align: center;
             }
 
-            .body{
-                width: 375px;
-                height: 453px;
-                padding: 0px;
-                margin: 0px;
-            }
-
-            .container {
-                width: 540px;
-                height: 400px;
-                padding: 10px 0px 10px 30px;
-                margin: 150px auto;
-                border-style: solid;
-                border-color: lightgrey;
-                border-radius: 12px;
-            }
-
-            .headline {
-                font-size: 60px;
-                font-weight: lighter;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                color: cornflowerblue;
-            }
-            
-            #numName {
-                font-size: 36px;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                color: black;
-                margin-top: 0px;
-                margin-bottom: 10px;    
-            }
-
-            #num_in {
-                width: 500px;
-                height: 40px;
-                font-size: 30px;
-                border-radius: 6px;
-                border-style: solid;
-                border-color: lightgrey;
-            }
-            
-            .btn {
-                width: 490px;
-                background-color: white;
-                color: cornflowerblue;
-                font-size: 28px;
-                cursor: pointer;
-                font-weight: bold;
-                border-style: solid;
-                border-color:cornflowerblue;
-                border-width: medium;
-                border-radius: 8px;
-                box-sizing: content-box;
-                margin-top: 15px;
-            }
-
-            .btn:active{
-                color: blue;
-                border-color: blue;
-            }
-
-            #numberBox {
-                display: grid;
+            .btnOK {
+                font-size: 20px;
             }
 
             /* -- Desktop design -- */
@@ -106,6 +111,11 @@
 
                 #popup {
                     top: 50%;
+                    font-size: 16px;
+                }
+
+                .btnOK {
+                    font-size: 13px;
                 }
 
                 .container {
@@ -126,11 +136,13 @@
                     width: 250px;
                     height: 20px;
                     font-size: 15px;
+                    border-radius: 8px;
                 }
             
                 .btn {
                     width: 50px;
                     font-size: 14px;
+                    border-radius: 8px;
                     margin-left: 190px;
                 }
             }
@@ -187,7 +199,7 @@
     <div id="popupOverlay">
         <div id="popup">
           <p id="result"></p>
-          <button onclick="closePopupWindow()">OK</button>
+          <button class="btnOK" onclick="closePopupWindow()">OK</button>
         </div>
       </div>
     </body>

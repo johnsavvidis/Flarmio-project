@@ -6,7 +6,10 @@
         <style>
             /* Please add the CSS here */
 
+            /* -- Mobile design -- */
+
             /* Pop-up overlay styling */
+
             #popupOverlay {
                 display: none;
                 position: fixed;
@@ -21,7 +24,7 @@
             /* Pop-up window styling */
             #popup {
                 position: absolute;
-                top: 50%;
+                top: 25%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 background: white;
@@ -31,17 +34,17 @@
                 text-align: center;
             }
 
-            /* -- Mobile design -- */
-
             .body{
                 width: 375px;
                 height: 453px;
+                padding: 0px;
+                margin: 0px;
             }
 
             .container {
                 align-items: left;
-                width: 290px;
-                height: 200px;
+                width: 540px;
+                height: 400px;
                 padding: 10px 0px 10px 30px;
                 margin: 150px auto;
                 border-style: solid;
@@ -50,14 +53,14 @@
             }
 
             .headline {
-                font-size: 30px;
+                font-size: 60px;
                 font-weight: lighter;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 color: cornflowerblue;
             }
             
             #numName {
-                font-size: 18px;
+                font-size: 36px;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 color: black;
                 margin-top: 0px;
@@ -65,19 +68,19 @@
             }
 
             #num_in {
-                width: 250px;
-                height: 20px;
-                font-size: 15px;
+                width: 500px;
+                height: 40px;
+                font-size: 30px;
                 border-radius: 6px;
                 border-style: solid;
                 border-color: lightgrey;
             }
             
             .btn {
-                width: 240px;
+                width: 490px;
                 background-color: white;
                 color: cornflowerblue;
-                font-size: 14px;
+                font-size: 28px;
                 cursor: pointer;
                 font-weight: bold;
                 border-style: solid;
@@ -100,6 +103,10 @@
             /* -- Desktop design -- */
 
             @media screen and (min-width: 500px) {
+
+                #popup {
+                    top: 50%;
+                }
 
                 .container {
                     width: 290px;

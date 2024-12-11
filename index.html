@@ -4,6 +4,7 @@
         <title>The form</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" type="image/png" sizes="32x32" href="form-icon.png">
         <style>
             /* Please add the CSS here */
 
@@ -161,12 +162,12 @@
                     document.getElementById("num_in").innerHTML = "";
                 }
                 else if(isNaN(x) || x <= 10){
-                    textMessage = "❌" + "Invalid input! Must be greater than 10!";
+                    textMessage = "❌" + " Invalid input! Must be greater than 10!";
                     showPopupWindow(textMessage);
                     document.getElementById("num_in").value = null;
                 }
                 else{
-                    textMessage = "✅" + "Input accepted!";
+                    textMessage = "✅" + " Input accepted!";
                     showPopupWindow(textMessage);
                     document.getElementById("num_in").value = null;
                 }

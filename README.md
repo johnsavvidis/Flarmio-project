@@ -4,12 +4,10 @@ This is a solution for Flarmio's Junior web developer's exercise.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-
-## Overview
+- [The challenge](#the-challenge)
+- [Screenshots](#screenshots)
+- [Built with](#built-with)
+- [Links](#links)
 
 ### The challenge
 
@@ -18,7 +16,7 @@ Users should be able to:
 - Test the input of a simple submit type form. If the input given by the user is greater than 10, it's accepted, otherwise it's not. Either way, the users get notified with a message from a pop-up window. 
 - Experience this app in both mobile and desktop design.
 
-### Screenshot
+### Screenshots
 
 Desktop design
 
@@ -38,6 +36,14 @@ Mobile M-L-Tablet design
 ![Mobile M screenshot 1 - layout](/screenshots/Mobile-M-L-Tablet/screenshot-1.png)
 ![Mobile S screenshot 2 - invalid input](./screenshots/Mobile-M-L-Tablet/screenshot-2.png)
 ![Mobile S screenshot 3 - input accepted](./screenshots/Mobile-M-L-Tablet/screenshot-3.png)
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
 ### Links
 

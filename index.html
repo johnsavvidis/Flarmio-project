@@ -13,28 +13,32 @@
             .body{
                 width: 500px;
                 height: 453px;
-                padding: 0px;
             }
 
             .container {
-                width: 400px;
-                height: 400px;
-                padding: 10px 0px 10px 40px;
-                
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                width: 375px;
+                height: 350px;
+                padding: 10px 0px 10px 55px;
+                margin: 50px 0px;
                 border-style: solid;
                 border-color: lightgrey;
                 border-radius: 15px;
             }
 
             .headline {
-                font-size: 60px;
+                width: 250px;
+                font-size: 50px;
                 font-weight: lighter;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 color: cornflowerblue;
             }
             
             #numName {
-                font-size: 36px;
+                width: 250px;
+                font-size: 25px;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 color: black;
                 margin-top: 0px;
@@ -42,16 +46,16 @@
             }
 
             #num_in {
-                width: 350px;
+                width: 300px;
                 height: 40px;
-                font-size: 30px;
+                font-size: 20px;
                 border-radius: 12px;
                 border-style: solid;
                 border-color: lightgrey;
             }
             
             .btn {
-                width: 340px;
+                width: 290px;
                 background-color: white;
                 color: cornflowerblue;
                 font-size: 28px;
@@ -71,6 +75,7 @@
             }
 
             #numberBox {
+                width: 300px;
                 display: grid;
             }
 
@@ -107,7 +112,7 @@
 
             /* -- Desktop design -- */
 
-            @media screen and (min-width: 500px) {
+            @media screen and (min-width: 425px) {
 
                 #popup {
                     top: 50%;
@@ -183,7 +188,7 @@
             }
         </script>
     </head>
-    <body style="margin-left: 0px;">
+    <body style="margin-left: 0px; margin-right: 0px;">
     <!--Please add the HTML here-->
     <div class="container">
         <h2 class="headline">Form</h2>

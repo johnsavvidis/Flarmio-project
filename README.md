@@ -9,6 +9,8 @@ This is a solution for Flarmio's Junior web developer's exercise.
   - [Screenshot](#screenshot)
   - [Links](#links)
 
+## Overview
+
 ### The challenge
 
 Users should be able to:

@@ -33,9 +33,9 @@ Mobile S design
 
 Mobile M-L-Tablet design
 
-![Mobile M screenshot 1 - layout](/screenshots/Mobile-M-L-Tablet/screenshot-1.png)
-![Mobile S screenshot 2 - invalid input](./screenshots/Mobile-M-L-Tablet/screenshot-2.png)
-![Mobile S screenshot 3 - input accepted](./screenshots/Mobile-M-L-Tablet/screenshot-3.png)
+![Mobile M-L-Tablet screenshot 1 - layout](/screenshots/Mobile-M-L-Tablet/screenshot-1.png)
+![Mobile M-L-Tablet screenshot 2 - invalid input](./screenshots/Mobile-M-L-Tablet/screenshot-2.png)
+![Mobile M-L-Tablet screenshot 3 - input accepted](./screenshots/Mobile-M-L-Tablet/screenshot-3.png)
 
 ### Built with
 

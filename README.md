@@ -25,17 +25,11 @@ Desktop design
 ![Desktop screenshot 3 - invalid input](./screenshots/Desktop/screenshot-3.png)
 ![Desktop screenshot 4 - input accepted](./screenshots/Desktop/screenshot-4.png)
 
-Mobile S design
+Mobile S-M-L-Tablet design
 
-![Mobile S screenshot 1 - layout](/screenshots/Mobile-S/screenshot-1.png)
-![Mobile S screenshot 2 - invalid input](./screenshots/Mobile-S/screenshot-2.png)
-![Mobile S screenshot 3 - input accepted](./screenshots/Mobile-S/screenshot-3.png)
-
-Mobile M-L-Tablet design
-
-![Mobile M-L-Tablet screenshot 1 - layout](/screenshots/Mobile-M-L-Tablet/screenshot-1.png)
-![Mobile M-L-Tablet screenshot 2 - invalid input](./screenshots/Mobile-M-L-Tablet/screenshot-2.png)
-![Mobile M-L-Tablet screenshot 3 - input accepted](./screenshots/Mobile-M-L-Tablet/screenshot-3.png)
+![Mobile M-L-Tablet screenshot 1 - layout](/screenshots/Mobile/screenshot-1.png)
+![Mobile M-L-Tablet screenshot 2 - invalid input](./screenshots/Mobile/screenshot-2.png)
+![Mobile M-L-Tablet screenshot 3 - input accepted](./screenshots/Mobile/screenshot-3.png)
 
 ### Built with
 

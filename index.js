@@ -4,7 +4,7 @@ window.onload = (event) => {
 function formSubmission(){  
     let inputValue = document.getElementById("num_in").value;
     let textMessage;
-    if(inputValue == ""){
+    if(inputValue === ""){
         document.getElementById("num_in").innerHTML = "";
     }
     else if(inputValue <= 10){
